@@ -13,7 +13,8 @@
 	<![endif]-->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+    <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery-1.11.2.min.js', CClientScript::POS_HEAD); ?>
+  
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
     
     <script type="text/javascript" src="/js/menu.js"></script>
