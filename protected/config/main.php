@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Блог на вии',
-    'defaultController'=>'post',
+    	'defaultController'=>'post',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -39,9 +39,9 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-            'showScriptName' => false,
+            		'showScriptName' => false,
 			'rules'=>array(
-                'category/<id:\d+>/<title:.*?>'=>'category/view',
+                		'category/<id:\d+>/<title:.*?>'=>'category/view',
 				'post/<id:\d+>/<title:.*?>'=>'post/view',
 				'posts/<tag:.*?>'=>'post/index',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -61,7 +61,7 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
-            'tablePrefix'=>'tbl_',
+            		'tablePrefix'=>'tbl_',
 		),
 		
 		'errorHandler'=>array(
