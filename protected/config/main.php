@@ -39,6 +39,7 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName' => false,
 			'rules'=>array(
                 'category/<id:\d+>/<title:.*?>'=>'category/view',
 				'post/<id:\d+>/<title:.*?>'=>'post/view',

@@ -28,7 +28,7 @@ class Controller extends CController
         echo '<li class="onelink"><a href="#"><span>'.$block->name.'</span></a><ul class="menuLi">';
            foreach($categoryQuery as $cat){
             if($block->id==$cat->id_block){
-                echo '<li><a href="/index.php/category/'.$cat->id.'/'.$cat->name.'">'.$cat->name.'</a></li>';
+                echo '<li><a href="/category/'.$cat->id.'/'.$cat->name.'">'.$cat->name.'</a></li>';
                 }
                }
                echo '</ul>';

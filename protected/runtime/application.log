@@ -8431,3 +8431,19 @@ REQUEST_URI=/
 in C:\OpenServer\domains\blogyii\protected\views\layouts\main.php (17)
 in C:\OpenServer\domains\blogyii\protected\views\layouts\column2.php (25)
 in C:\OpenServer\domains\blogyii\protected\controllers\PostController.php (155)
+2015/02/25 19:13:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\OpenServer\domains\blogyii\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\blogyii\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 C:\OpenServer\domains\blogyii\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\blogyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+---
+2015/02/25 19:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "administrator".' in C:\OpenServer\domains\blogyii\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\blogyii\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('administrator')
+#1 C:\OpenServer\domains\blogyii\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\blogyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/administrator
+---
